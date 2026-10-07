@@ -144,7 +144,7 @@ git fetch origin
 git reset --hard
 git checkout -f "$CAELESTIA_CLI_COMMIT"
 git apply "$SCRIPT_DIR/patches/caelestia-cli.patch"
-git apply "$SCRIPT_DIR/patches/caelestia-cli-recorder.patch"
+#git apply "$SCRIPT_DIR/patches/caelestia-cli-recorder.patch"
 pip install --break-system-packages --user .
 # Hyprland sessions started from a display manager often lack ~/.local/bin in PATH,
 # which makes `exec caelestia shell -d` silently fail (no bar/dashboard). Symlink it.
